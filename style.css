@@ -1,0 +1,61 @@
+body {
+    width: 80%;
+    min-width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, lightblue, whitesmoke, white, whitesmoke, lightblue);
+    padding: 20px;
+}
+
+section {
+    background-color: palegoldenrod;
+    color: black;
+    text-align: center;
+    width: 800px;
+    margin: 20px auto;
+    border: 1px black solid;
+    box-shadow: 5px 5px gray;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+.polaNaPrawo {
+    width: 300px;
+    margin: auto 50px;
+    float: right;
+    text-align: left;
+}
+
+.polaNaLewo {
+    width: 300px;
+    margin: auto 50px;
+    float: left;
+    text-align: right;
+}
+
+#oblicz {
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: skyblue;
+    color: black;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+    border-radius: 20px;
+}
+
+#oblicz:hover {
+    color: lightyellow;
+    border-color: black;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+#oblicz:active {
+    color: lightyellow;
+    background-color: steelblue;
+    cursor: pointer;
+    border-width: 2px 1px 1px 2px;
+}
