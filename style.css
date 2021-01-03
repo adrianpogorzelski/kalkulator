@@ -5,6 +5,7 @@ body {
     margin: 0 auto;
     background-image: linear-gradient(to right, lightblue, whitesmoke, white, whitesmoke, lightblue);
     padding: 20px;
+    font-family: Arial;
 }
 
 section {

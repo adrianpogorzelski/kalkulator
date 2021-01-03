@@ -17,12 +17,13 @@ const obliczWynik = () => {
     let odsetki = (kwota * dlugosc * realneOprocentowanie).toFixed(2);
     let podatekRazem = (odsetki * 0.19).toFixed(2);
     let zysk = (odsetki - podatekRazem).toFixed(2);
+    let sumaNaKoniec = parseFloat(kwota) + parseFloat(zysk);
 
     document.getElementById("wynikKwota").innerHTML = "<strong>" + kwota + " zł </strong>";
     document.getElementById("wynikOdsetki").innerHTML = "<strong>" + odsetki + " zł </strong>";
     document.getElementById("wynikPodatek").innerHTML = "<strong>" + podatekRazem + " zł </strong>";
     document.getElementById("wynikZysk").innerHTML = "<strong>" + zysk + " zł </strong>";
-    document.getElementById("wynikRazem").innerHTML = "<strong>" + (kwota + zysk) + "zł </strong>";
+    document.getElementById("wynikRazem").innerHTML = "<strong>" + sumaNaKoniec + "zł </strong>";
 
    /*
     document.getElementById("wynik").innerHTML =
@@ -34,3 +35,5 @@ const obliczWynik = () => {
 
         */
 }
+
+document.getElementById('oblicz').addEventListener('click', obliczWynik)
