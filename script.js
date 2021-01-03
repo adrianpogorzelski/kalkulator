@@ -1,4 +1,4 @@
-function obliczWynik() {
+const obliczWynik = () => {
     let kwota = document.getElementById("kwota").value;
     let dlugosc = document.getElementById("dlugosc").value;
     let oprocentowanie = document.getElementById("oprocentowanie").value / 100;
@@ -22,7 +22,7 @@ function obliczWynik() {
     document.getElementById("wynikOdsetki").innerHTML = "<strong>" + odsetki + " zł </strong>";
     document.getElementById("wynikPodatek").innerHTML = "<strong>" + podatekRazem + " zł </strong>";
     document.getElementById("wynikZysk").innerHTML = "<strong>" + zysk + " zł </strong>";
-    document.getElementById("wynikRazem").innerHTML = "<strong>" + kwota + zysk + "zł </strong>";
+    document.getElementById("wynikRazem").innerHTML = "<strong>" + (kwota + zysk) + "zł </strong>";
 
    /*
     document.getElementById("wynik").innerHTML =
