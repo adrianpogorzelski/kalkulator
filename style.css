@@ -1,22 +1,24 @@
 body {
-    width: 80%;
-    min-width: 900px;
-    height: 100vh;
     margin: 0 auto;
-    background-image: linear-gradient(to right, lightblue, whitesmoke, white, whitesmoke, lightblue);
-    padding: 20px;
-    font-family: Arial;
+    font-family: Helvetica;
+    background-color: black;
+}
+
+main {
+    padding-top: 100px;
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section {
-    background-color: palegoldenrod;
+    background-color: rgba(255,255,255,0.9);
     color: black;
     text-align: center;
     width: 800px;
-    margin: 20px auto;
-    border: 1px black solid;
-    box-shadow: 5px 5px gray;
-    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     overflow: auto;
 }
@@ -59,4 +61,23 @@ section {
     background-color: steelblue;
     cursor: pointer;
     border-width: 2px 1px 1px 2px;
+}
+
+header {
+    border-bottom: 1px solid white;
+}
+
+footer {
+    border-top: 1px solid white;
+}
+
+header, footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+}
+
+footer a {
+    color: white;
 }

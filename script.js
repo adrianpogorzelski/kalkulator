@@ -1,4 +1,7 @@
+// import * from 'js/kalkulator'
+
 const obliczWynik = () => {
+
     let kwota = document.getElementById("kwota").value;
     let dlugosc = document.getElementById("dlugosc").value;
     let oprocentowanie = document.getElementById("oprocentowanie").value / 100;
@@ -25,7 +28,7 @@ const obliczWynik = () => {
     document.getElementById("wynikZysk").innerHTML = "<strong>" + zysk + " zł </strong>";
     document.getElementById("wynikRazem").innerHTML = "<strong>" + sumaNaKoniec + "zł </strong>";
 
-   /*
+
     document.getElementById("wynik").innerHTML =
         "Dla inwestycji " + kwota + " zł:" +
         "<br><br>Zysk: <strong>" + wynik + "</strong> zł" +
@@ -33,7 +36,7 @@ const obliczWynik = () => {
         "<br><br>Suma na koniec: " + razem + " zł";
 
 
-        */
+
 }
 
 document.getElementById('oblicz').addEventListener('click', obliczWynik)
